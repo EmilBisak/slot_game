@@ -10,6 +10,8 @@ Prerequisites
 
 
 ```
+-$ git clone https://github.com/EmilBisak/slot_game.git
+
 -$ cd slot_game
 
 -$ npm install # Install project dependencies listed in package.json
