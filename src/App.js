@@ -5,6 +5,19 @@ import WinSound from './components/WinSound';
 import Paytable from './components/Paytable';
 import './App.css'
 
+const olivesImg = require("./assets/image/olives.jpg");
+const apricotsImg = require("./assets/image/apricots.jpg");
+const strawberriesImg = require("./assets/image/strawberries.jpg");
+const grapesImg = require("./assets/image/grapes.jpg");
+const cheriesImg = require("./assets/image/cheries.jpg");
+const limesImg = require("./assets/image/limes.jpg");
+const bananasImg = require("./assets/image/bananas.jpg");
+const watermellonsImg = require("./assets/image/watermellons.jpg");
+const cloversImg = require("./assets/image/clovers.jpg");
+const diamondsImg = require("./assets/image/diamonds.jpg");
+const backgroundImg = require("./assets/image/47.jpg")
+
+
 
 export default class App extends Component {
   state = {
@@ -83,7 +96,7 @@ export default class App extends Component {
         balance: balance + (bet * 10),
         winScore: bet * 10
       });
-      body.style.backgroundImage = "url(/image/olives.jpg)";
+      body.style.backgroundImage = `url(${olivesImg})`;
     } else if (this.indexesOf(slots, -0).length === 2) {
       this.setState({
         msg: `2 apricots, you won ${bet * 2}$`,
@@ -96,7 +109,7 @@ export default class App extends Component {
         balance: balance + (bet * 10),
         winScore: bet * 10
       })
-      body.style.backgroundImage = "url(/image/apricots.jpg)"
+      body.style.backgroundImage = `url(${apricotsImg})`;
     } else if (this.indexesOf(slots, -150).length === 2) {
       this.setState({
         msg: `2 strawberries, you won ${bet * 2}$`,
@@ -109,7 +122,7 @@ export default class App extends Component {
         balance: balance + (bet * 12),
         winScore: bet * 12
       })
-      body.style.backgroundImage = "url(/image/strawberries.jpg)"
+      body.style.backgroundImage = `url(${strawberriesImg})`;
     } else if (this.indexesOf(slots, -300).length === 2) {
       this.setState({
         msg: `2 grapes, you won ${bet * 3}$`,
@@ -122,7 +135,7 @@ export default class App extends Component {
         balance: balance + (bet * 15),
         winScore: bet * 15
       })
-      body.style.backgroundImage = "url(/image/grapes.jpg)"
+      body.style.backgroundImage = `url(${grapesImg})`;
     } else if (this.indexesOf(slots, -450).length === 2) {
       this.setState({
         msg: `2 apples, you won ${bet * 3}$`,
@@ -135,7 +148,7 @@ export default class App extends Component {
         balance: balance + (bet * 15),
         winScore: bet * 15
       })
-      body.style.backgroundImage = "url(/image/pearls.jpg)"
+      body.style.backgroundImage = `url(${apricotsImg})`;
     } else if (this.indexesOf(slots, -600).length === 2) {
       this.setState({
         msg: `2 oranges, you won ${bet * 3}$`,
@@ -148,7 +161,7 @@ export default class App extends Component {
         balance: balance + (bet * 20),
         winScore: bet * 20
       })
-      body.style.backgroundImage = "url(/image/pearls.jpg)"
+      body.style.backgroundImage = `url(${apricotsImg})`;
     } else if (this.indexesOf(slots, -750).length === 2) {
       this.setState({
         msg: `2 cherries, you won ${bet * 4}$`,
@@ -161,7 +174,7 @@ export default class App extends Component {
         balance: balance + (bet * 20),
         winScore: bet * 20
       })
-      body.style.backgroundImage = "url(/image/cheries.jpg)"
+      body.style.backgroundImage = `url(${cheriesImg})`;
     } else if (this.indexesOf(slots, -900).length === 2) {
       this.setState({
         msg: `2 limes, you won ${bet * 4}$`,
@@ -174,7 +187,7 @@ export default class App extends Component {
         balance: balance + (bet * 25),
         winScore: bet * 25
       })
-      body.style.backgroundImage = "url(/image/limes.jpg)"
+      body.style.backgroundImage = `url(${limesImg})`;
     } else if (this.indexesOf(slots, -1050).length === 2) {
       this.setState({
         msg: `2 bananas, you won ${bet * 5}$`,
@@ -187,7 +200,7 @@ export default class App extends Component {
         balance: balance + (bet * 30),
         winScore: bet * 30
       })
-      body.style.backgroundImage = "url(/image/bananas.jpg)"
+      body.style.backgroundImage = `url(${bananasImg})`;
     } else if (this.indexesOf(slots, -1200).length === 2) {
       this.setState({
         msg: `2 watermelons, you won ${bet * 5}$`,
@@ -200,7 +213,7 @@ export default class App extends Component {
         balance: balance + (bet * 30),
         winScore: bet * 30
       })
-      body.style.backgroundImage = "url(/image/watermellons.jpg)"
+      body.style.backgroundImage = `url(${watermellonsImg})`;
     } else if (this.indexesOf(slots, -1350).length === 2) {
       this.setState({
         msg: `2 clovers, you won ${bet * 10}$`,
@@ -213,7 +226,7 @@ export default class App extends Component {
         balance: balance + (bet * 100),
         winScore: bet * 100
       })
-      body.style.backgroundImage = "url(/image/clovers.jpg)"
+      body.style.backgroundImage = `url(${cloversImg})`;
     } else if (this.indexesOf(slots, -1500).length === 2) {
       this.setState({
         msg: `2 diamonds, you won ${bet * 15}$`,
@@ -226,9 +239,9 @@ export default class App extends Component {
         balance: balance + (bet * 120),
         winScore: bet * 120
       })
-      body.style.backgroundImage = "url(/image/diamonds.jpg)"
+      body.style.backgroundImage = `url(${diamondsImg})`;
     } else {
-      body.style.backgroundImage = "url(/image/47.jpg)"
+      body.style.backgroundImage = `url(${backgroundImg})`;
     }
   }
 

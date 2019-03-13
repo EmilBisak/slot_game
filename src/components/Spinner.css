@@ -24,7 +24,7 @@
 
 .spinner {
     min-height: 100%;
-    background: #fff url(/image/slots-design.jpg) repeat-y;
+    background: #fff url(../assets/image/slots-design.jpg) repeat-y;
     background-position-x: 45px;
     transition: 0.3s background-position-y ease-in-out;
     padding: 0 120px;
