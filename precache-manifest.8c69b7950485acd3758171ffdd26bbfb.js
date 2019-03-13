@@ -120,7 +120,7 @@ self.__precacheManifest = [
     "url": "/slot_game/static/media/diamonds.0f8e2c92.jpg"
   },
   {
-    "revision": "3d26eea72f072dde24cb33c1ee2f05cf",
+    "revision": "c20b1a22150c4fd58a5303b78a107bdb",
     "url": "/slot_game/index.html"
   }
 ];
